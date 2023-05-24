@@ -44,5 +44,6 @@ exports.login = (req, res, next) => {
 exports.logout = (req, res) => {
     req.logout(() => {
         res.redirect('/');
+        console.log('깃커밋 연습');
     });
 };
